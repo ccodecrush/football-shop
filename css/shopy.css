@@ -1,0 +1,264 @@
+ :root{
+  --c1: #162332;
+  --c2: #3398db;
+  --c3: #69adda;
+  --c4: #9fc2da;
+  --c5: #d5d7da;
+}
+
+.container__shop{
+  min-height: calc(100vh - 70px - 215px);
+}
+
+@media (max-width: 1100px) {
+    .container__shop {
+        min-height: calc(100vh - 70px - 182px);
+    }
+
+    .pro{
+      min-width: 250px;
+    }
+}
+
+.pro img:hover {
+    transform: scale(1.1); /* Збільшуємо розмір на 10% при наведенні */
+}
+
+#product1{
+  text-align: center;
+  color: var(--c1);
+  margin: 20px 0px;
+}
+
+#product1 h2{
+  font-size: 34px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.pro-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.pro{
+  /* display: grid;
+  gap: 5px; */
+  position: relative;
+  width: 23%;
+  max-width: 250px;
+  padding: 10px 12px;
+  margin: 20px 10px;
+  border: 1px solid #a2adbaf5;
+  background-color: #fff;
+  color: var(--c1);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.pro:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pro-img{
+  background-color: #e9eaec;
+  border-radius: 5px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.pro img{
+  width: 100%;
+  padding: 5px;
+  transition: transform 0.5s ease;
+}
+
+.pro .des{
+  text-align: start;
+  padding: 10px 0px;
+}
+
+.pro .des span{
+  text-transform: lowercase;
+  color: #606063;
+  font-size: 12px;
+}
+
+.pro .des h5{
+  padding-top: 10px;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+.pro .des i{
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+.pro .des i:hover{
+  color: rgb(251, 208, 101);
+}
+
+.pro .des h4{
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--c2);
+}
+
+.pro .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e9eaec;
+  font-weight: 500;
+  color: var(--c2);
+  cursor: pointer;
+  border: 1px solid #c0c5cbf5;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+  
+
+/* banner */
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container .banner{
+  width: 100%;
+    background: linear-gradient(-55deg, #344355 29%, #162332 29.1%, #162332 68%, #344355 68.1%);
+    /* border-radius: 5px; */
+    /* margin:10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+
+.banner-container .banner .shoe{
+    flex:1 1 250px;
+    padding:15px;
+    text-align: center;
+}
+
+.banner-container .banner .shoe img{
+    width:80%;
+}
+
+.banner-container .banner .content{
+    flex:1 1 250px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+.banner-container .banner .content span{
+    color:#eee;
+    font-size: 25px;
+}
+
+.banner-container .banner .content h3{
+    color:#fff;
+    font-size: 40px;
+}
+
+.banner-container .banner .content p{
+    color:#eee;
+    font-size: 20px;
+    padding:10px 0;
+}
+
+.banner-container .banner .content .btn{
+    display: block;
+    height:40px;
+    width:150px;
+    line-height: 40px;
+    background: #fff;
+    color:#d63031;
+    margin:5px auto;
+    text-decoration: none;
+}
+
+.banner-container .banner .women{
+    position: relative;
+    bottom: -33px;
+    padding:10px;
+    flex:1 1 250px;
+}
+
+.banner-container .banner .women img{
+    width:100%;
+}
+
+@media (max-width:768px){
+    .banner-container .banner .women{
+        display: none;
+    }
+}
+
+
+/* display_message */
+/* Стилі для повідомлення */
+.display_message {
+  width: 100%;
+  background-color: var(--c3);
+  border-radius: 0px 0px 35px 35px;
+  padding: 20px;
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* Стилі для тексту повідомлення */
+.display_message span {
+  color: var(--c1);
+}
+
+/* Стилі для анімованого хрестика */
+.display_message i {
+  float: right;
+  cursor: pointer;
+  color: var(--c1);
+  width: 1em;
+  height: 1em;
+}
+
+.display_message i:hover{
+  color: #22374e;
+}
+
+/* Анімація входження */
+@keyframes slideIn {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+
+/* Анімація зникнення */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none; /* Зміна display на none після закінчення анімації */
+  }
+}

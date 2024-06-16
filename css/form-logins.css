@@ -1,0 +1,246 @@
+.container__main {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    min-height: calc(100vh - 33px - 133px); 
+}
+
+.box {
+  background-color: var(--c1);
+  width: 25rem;
+  padding: 2.5rem;
+  border: 2px solid #9fc2da;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.box h2{
+  margin: 0px 0px 25px 0px;
+  padding: 0;
+  color: var(--c5);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.box .inputBox {
+  position: relative;
+  /* display: flex; */
+  /* align-items: center; */ margin-bottom: 0.875rem;
+}
+.error-icon {
+    margin-left: 10px; /* Додатковий відступ між іконкою та інпутом */
+    margin-top: 10px;
+}
+.box .inputBox input{
+  width: 100%;
+  padding: 0.625rem 10px;
+  font-size: 1rem;
+ 
+  border: 2px solid #9fc2da;
+  border-radius: 4px;
+  color: #d5d7da;
+  background: transparent;
+}
+
+.box .inputBox label{
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #d5d7da;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label,
+.box .inputBox input:not([value=""]) ~ label{
+  top: -0.4rem;
+  left: 10px;
+  color: var(--c2);
+  font-size: 0.85rem;
+  background-color: var(--c1);
+  height: 10px;
+  padding: 0px 5px;
+}
+
+.box .inputBox input:focus {
+  outline: none;
+  border: 2.2px solid #69adda;
+}
+
+
+.password-toggle-icon {
+  position: absolute;
+      top: 61%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-toggle-icon i {
+  font-size: 18px;
+  line-height: 1;
+  color: #9ebed4;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.password-toggle-icon i:hover {
+  color: #747474;
+}
+
+button {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    /* border-radius: 0.312rem; */
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+  background-color: #145bb9;
+}
+
+.hr-text {
+    border: 0;
+    color: currentColor;
+    font-weight: 300;
+    height: 1.5em;
+    line-height: 1em;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    outline: 0;
+    position: relative;
+    text-align: center;
+    color: #cacaca;
+}
+
+.hr-text:before {
+    background: currentColor;
+    content: "";
+    height: 1px;
+    left: 0;
+    opacity: .15;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.hr-text:after {
+    background-color: #162332;
+    color: currentColor;
+    content: attr(data-content);
+    display: inline-block;
+    font-size: .8em;
+    line-height: 1.5rem;
+    padding: 0 .5rem;
+    position: relative;
+}
+
+p{
+  color: #6a779c;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+}
+p a {
+    font-size: 12px;
+    color: #1a73e8;
+    transition: all 0.3s ease;
+}
+
+p a:hover{
+  color: #69adda;
+}
+
+/* MESSAGE */
+
+.display_message {
+  width: 100%;
+  background-color: #1a73e8;
+  border-radius: 0px 0px 35px 35px;
+  padding: 20px;
+  animation: slideIn 0.5s ease forwards;
+}
+
+
+/* Стилі для анімованого хрестика */
+.alert {
+  text-align: center;
+  cursor: pointer;
+  color: var(--c1);
+  width: 1em;
+  height: 1em;
+}
+
+.display_message i:hover{
+  color: #22374e;
+}
+
+/* Анімація входження */
+@keyframes slideIn {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+
+/* Анімація зникнення */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none; /* Зміна display на none після закінчення анімації */
+  }
+}
+.sukces {
+  color: #97ff80;
+}
+
+.error {
+  color: rgb(0, 0, 0);
+}
+
+
+.form-check {
+    font-size: 12px;
+    padding: 10px 0px 20px 0px; color: #cacaca;
+    font-weight: 300;
+}
+
+.fa-times{
+  float: right;
+  cursor: pointer;
+}
+
+
+.form-check .form-check-input {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.input-err{
+  color: #ff1f1f;
+  font-size: 11px;
+  font-weight: 300;
+  padding: 5px 0px;
+}
+

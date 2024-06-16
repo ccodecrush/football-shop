@@ -1,0 +1,78 @@
+/* CSS for shopping cart page */
+
+/* .container__main {
+  margin: 20px auto;
+  width: 80%;
+} */
+
+.shopping__cart {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  padding: 10px;
+  background-color: var(--c2); /* Using CSS variable for background color */
+  color: #fff;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.quantity_box {
+  display: flex;
+  align-items: center;
+}
+
+.update_quantity {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: var(--c3); /* Using CSS variable for background color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity_box input[type="number"] {
+  width: 50px;
+  padding: 5px;
+}
+
+.table__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bottom__btn {
+  padding: 10px 20px;
+  background-color: var(--c4); /* Using CSS variable for background color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.delete__all {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+  color: var(--c1); /* Using CSS variable for text color */
+  text-decoration: none;
+}
+
+.delete__all i {
+  margin-right: 5px;
+}

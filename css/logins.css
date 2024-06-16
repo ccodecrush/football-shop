@@ -1,0 +1,15 @@
+
+.box .inputBox {
+  margin-bottom: 0;
+}
+
+.box .inputBox .login_email{
+  margin-bottom: 25px;
+}
+
+.toggle-icon {
+      top: 56%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
